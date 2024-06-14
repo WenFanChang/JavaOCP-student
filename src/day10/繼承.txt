@@ -1,0 +1,6 @@
+Employee 員工
+	- Salary, name
+Manager 經理
+	- Salary, name, budget 預算
+Supervisor 管理者
+	- Salary, name, budget, stockOptions
