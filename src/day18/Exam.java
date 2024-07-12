@@ -28,8 +28,7 @@ public class Exam implements Comparable<Exam>{
 		return Objects.equals(score, other.score) && Objects.equals(subject, other.subject);
 	}
 	
-	
-	
+
 	public String getSubject() {
 		return subject;
 	}
@@ -43,6 +42,13 @@ public class Exam implements Comparable<Exam>{
 		return "Exam [subject=" + subject + ", score=" + score + "]";
 	}
 
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public void setScore(Integer score) {
+		this.score = score;
+	}
 	@Override
 	public int compareTo(Exam o) {
 		if(this.score == null && o.score == null) {
@@ -54,7 +60,7 @@ public class Exam implements Comparable<Exam>{
 		if(o.score == null) {
 			return -1;
 		}
-		return this.score - o.score;
+		return this.score - o.score;  // 由小到大
 	}
 	
 }

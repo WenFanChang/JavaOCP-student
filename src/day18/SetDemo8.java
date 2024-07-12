@@ -8,6 +8,7 @@ public class SetDemo8 {
 
 	public static void main(String[] args) {
 		// Set 排序使用 TreeSet
+		Exam java = new Exam("Java", 90);
 		SortedSet<Exam> exams = new TreeSet<>();
 		exams.add(new Exam("VB", 80));
 		exams.add(new Exam("Javascript", null));
@@ -28,7 +29,9 @@ public class SetDemo8 {
 		exam2.addAll(exams);
 		System.out.println(exam2);
 		
-		
+		java.setScore(100);
+		System.out.println(exams);
+		System.out.println(exam2);
 
 	}
 
