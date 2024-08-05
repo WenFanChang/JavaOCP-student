@@ -17,7 +17,10 @@ public class SportMain {
 	
 		st1.start();
 		st2.start();
-		//st3.start();
+		//st3.start();    //不可重複調用 start()
+		
+		//st1.run();    //是單純的調用物方法, 並無使用到多執行緒機制
+		//st2.run();
 
 	}
 
